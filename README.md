@@ -38,3 +38,19 @@ Unix command **cat** can be used to join two or more files into 1
 **kill**	Stops a process.   
 
 **jobs**	Lists the processes that are running     
+
+## Running a Bash file.  
+bash file.sh
+
+**to run in background**
+use **&** symbol at end
+bash file.sh &
+
+## Use of nohup.  
+
+**nohup** - nohup is a POSIX command which means "no hang up". Its purpose is to execute a command such that it ignores the HUP (hangup) signal and therefore does not stop when the user logs out. Output that would normally go to the terminal goes to a file called nohup.  
+***Example***
+nohup gzip filename & > file.log 2>err.log
+*> file.log*  output file of nohup
+*2> err.log*  output error file
+
